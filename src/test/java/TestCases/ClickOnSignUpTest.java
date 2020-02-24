@@ -19,10 +19,10 @@ public class ClickOnSignUpTest extends TestCasesBase
 	BankHomePage signupObj;
 	
 
-	@BeforeMethod
-    public void methodLevelSetup() {
-       signupObj = new BankHomePage(driver);
-    }
+//	@BeforeMethod
+//    public void methodLevelSetup() {
+//       signupObj = new BankHomePage(driver);
+//    }
 	
 	
 	
@@ -38,7 +38,7 @@ public class ClickOnSignUpTest extends TestCasesBase
 	public void testClinkOnLink(Method method) throws InterruptedException {
 		
 		ExtentTestManager.startTest(method.getName(), "Testing clicked on Link or not.");
-		
+		signupObj = new BankHomePage(driver);
 		signupObj.clickOnLink();
 		
 		Thread.sleep(10000);
@@ -65,6 +65,6 @@ public class ClickOnSignUpTest extends TestCasesBase
 	
 	@AfterTest
 	public void closeDriver() {
-		driver.close();
+		//driver.close();
 	}
 }

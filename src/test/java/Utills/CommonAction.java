@@ -214,6 +214,11 @@ public class CommonAction extends TestCasesBase
 					coordinate.inViewPort();
 				}
 
+				/**
+				 * This method is to verify the checkbox
+				 * @param checkbox
+				 * @param driver
+				 */
 				public static void checkbox_Checking(WebElement checkbox,WebDriver driver)
 				{
 					boolean checkstatus;
@@ -229,6 +234,10 @@ public class CommonAction extends TestCasesBase
 					}
 				}
 
+				/**
+				 * @param Radio
+				 * @param driver
+				 */
 				public static void radiobutton_Select(WebElement Radio,WebDriver driver) 
 				{
 				boolean checkstatus;

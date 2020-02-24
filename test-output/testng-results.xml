@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-16T18:46:14 IST" name="N11 Test Suite" finished-at="2020-01-16T18:46:46 IST" duration-ms="32504">
+  <suite name="Default suite" duration-ms="21480" started-at="2020-02-16T17:59:59Z" finished-at="2020-02-16T18:00:20Z">
     <groups>
     </groups>
-    <test started-at="2020-01-16T18:46:14 IST" name="ClikingTest" finished-at="2020-01-16T18:46:46 IST" duration-ms="32504">
+    <test name="Default test" duration-ms="21480" started-at="2020-02-16T17:59:59Z" finished-at="2020-02-16T18:00:20Z">
       <class name="TestCases.ClickOnSignUpTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:14 IST" name="setUp" finished-at="2020-01-16T18:46:14 IST" duration-ms="70" status="PASS">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.ClickOnSignUpTest@72057ecf]" name="setUp" is-config="true" duration-ms="10" started-at="2020-02-16T17:59:59Z" finished-at="2020-02-16T17:59:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="testOpenApplication()[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:14 IST" name="testOpenApplication" finished-at="2020-01-16T18:46:32 IST" duration-ms="18549" status="PASS">
+        <test-method status="PASS" signature="testOpenApplication()[pri:0, instance:TestCases.ClickOnSignUpTest@72057ecf]" name="testOpenApplication" is-config="true" duration-ms="21221" started-at="2020-02-16T17:59:59Z" finished-at="2020-02-16T18:00:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenApplication -->
-        <test-method is-config="true" signature="methodLevelSetup(java.lang.reflect.Method)[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:32 IST" name="methodLevelSetup" finished-at="2020-01-16T18:46:33 IST" duration-ms="279" status="PASS">
+        <test-method status="FAIL" signature="testClinkOnLink(java.lang.reflect.Method)[pri:0, instance:TestCases.ClickOnSignUpTest@72057ecf]" name="testClinkOnLink" duration-ms="191" started-at="2020-02-16T18:00:20Z" description="Testing clicked on Link or not." finished-at="2020-02-16T18:00:20Z">
           <params>
             <param index="0">
               <value>
@@ -23,21 +23,45 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodLevelSetup -->
-        <test-method signature="testClinkOnLink(java.lang.reflect.Method)[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:33 IST" name="testClinkOnLink" description="Testing clicked on Link or not." finished-at="2020-01-16T18:46:45 IST" duration-ms="12720" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.ClickOnSignUpTest.testClinkOnLink(java.lang.reflect.Method) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at ObjectRepoReader.ObjectMap.getObjectLocator(ObjectMap.java:40)
+at TestBases.TestCasesBase.getWebElement(TestCasesBase.java:67)
+at TestPages.BankHomePage.clickOnLink(BankHomePage.java:30)
+at TestCases.ClickOnSignUpTest.testClinkOnLink(ClickOnSignUpTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClinkOnLink -->
-        <test-method signature="testFailedScenarios(java.lang.reflect.Method)[pri:1, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:45 IST" name="testFailedScenarios" description="Test filed test cases " finished-at="2020-01-16T18:46:45 IST" duration-ms="5" status="FAIL">
+        <test-method status="FAIL" signature="testFailedScenarios(java.lang.reflect.Method)[pri:1, instance:TestCases.ClickOnSignUpTest@72057ecf]" name="testFailedScenarios" duration-ms="9" started-at="2020-02-16T18:00:20Z" description="Test filed test cases " finished-at="2020-02-16T18:00:20Z">
           <params>
             <param index="0">
               <value>
@@ -47,40 +71,37 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at TestCases.ClickOnSignUpTest.testFailedScenarios(ClickOnSignUpTest.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at TestCases.ClickOnSignUpTest.testFailedScenarios(ClickOnSignUpTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -90,29 +111,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFailedScenarios -->
-        <test-method is-config="true" signature="methodLevelSetup(java.lang.reflect.Method)[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:45 IST" name="methodLevelSetup" finished-at="2020-01-16T18:46:45 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.ClickOnSignUpTest.testFailedScenarios(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodLevelSetup -->
-        <test-method is-config="true" signature="methodLevelSetup(java.lang.reflect.Method)[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:46 IST" name="methodLevelSetup" finished-at="2020-01-16T18:46:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.ClickOnSignUpTest.testAcualExpected(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodLevelSetup -->
-        <test-method signature="testAcualExpected(java.lang.reflect.Method)[pri:2, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:46 IST" name="testAcualExpected" description="Test actual expected" finished-at="2020-01-16T18:46:46 IST" duration-ms="1" status="FAIL">
+        <test-method status="FAIL" signature="testAcualExpected(java.lang.reflect.Method)[pri:2, instance:TestCases.ClickOnSignUpTest@72057ecf]" name="testAcualExpected" duration-ms="3" started-at="2020-02-16T18:00:20Z" description="Test actual expected" finished-at="2020-02-16T18:00:20Z">
           <params>
             <param index="0">
               <value>
@@ -126,37 +125,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: expected [That] but found [This]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at TestCases.ClickOnSignUpTest.testAcualExpected(ClickOnSignUpTest.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at TestCases.ClickOnSignUpTest.testAcualExpected(ClickOnSignUpTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -166,15 +163,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAcualExpected -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:46 IST" name="closeDriver" finished-at="2020-01-16T18:46:46 IST" duration-ms="145" status="PASS">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:TestCases.ClickOnSignUpTest@72057ecf]" name="closeDriver" is-config="true" duration-ms="1" started-at="2020-02-16T18:00:20Z" finished-at="2020-02-16T18:00:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.ClickOnSignUpTest@37918c79]" started-at="2020-01-16T18:46:47 IST" name="tearDown" finished-at="2020-01-16T18:46:47 IST" duration-ms="522" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.ClickOnSignUpTest@72057ecf]" name="tearDown" is-config="true" duration-ms="632" started-at="2020-02-16T18:00:20Z" finished-at="2020-02-16T18:00:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.ClickOnSignUpTest -->
-    </test> <!-- ClikingTest -->
-  </suite> <!-- N11 Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

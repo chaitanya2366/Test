@@ -9,16 +9,16 @@ import Utills.CommonAction;
 
 public class BankHomePage 
 {
-	
-	WebElement signInLink;
 	public WebDriver driver;
+	WebElement signInLink;
+	
 	
 	public BankHomePage(WebDriver driver)
 	{
 		this.driver = driver;
 	}
 	
-	 
+	
 	
 	public  String getTittle(WebDriver driver) {
 		
